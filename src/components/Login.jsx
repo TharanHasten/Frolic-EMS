@@ -13,7 +13,7 @@ const Login = ({ onLogin }) => {
   const handleSubmit = async(e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:3000/api/login', {
+      const response = await axios.post('https://frolic-ems-backend.onrender.com/api/login', {
         email: formData.email,
         password: formData.password
       });
